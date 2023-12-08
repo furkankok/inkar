@@ -1,5 +1,5 @@
-
 from django.http import HttpResponse
+
 from inkan.decorator import pass_only_get
 
 @pass_only_get

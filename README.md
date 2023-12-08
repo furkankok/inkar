@@ -8,7 +8,7 @@ This Python package provides a collection of decorators for Django views to stre
 You can install the package using pip:
 
 ```shell
-pip install django-decorators
+pip install django-validate-decorators
 ```
 
 ## Usage
@@ -20,9 +20,10 @@ from django.http import HttpResponse
 from decorators import pass_only_get, pass_json_body
 
 @pass_only_get
-def my_view(request):
+def my_view(request, name: str, age: int):
     # Your view logic
-    return HttpResponse('Only GET requests are processed.')
+    # Use name and age here
+    return HttpResponse('Hello World.')
 ```
 
 ## Features
