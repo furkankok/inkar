@@ -17,7 +17,7 @@ Import the desired decorators from the package and apply them to your view funct
 
 ```python
 from django.http import HttpResponse
-from decorators import pass_only_get, pass_json_body
+from inkar.decorators import pass_only_get, pass_json_body
 
 @pass_only_get
 def my_view(request, name: str, age: int):
